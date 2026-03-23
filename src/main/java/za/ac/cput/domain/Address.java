@@ -5,10 +5,10 @@ public class Address {
     private String street;
     private String postalCode;
 
-    public Address() {
+    private Address() {
     }
     //    Builder Constractor
-    public Address(Builder builder) {
+    private Address(Builder builder) {
         this.city = builder.city;
         this.street = builder.street;
         this.postalCode = builder.postalCode;

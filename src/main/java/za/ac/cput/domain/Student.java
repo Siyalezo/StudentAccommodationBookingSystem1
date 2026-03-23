@@ -5,10 +5,10 @@ public class Student {
     private String studentName;
     private GenderType gender;
 
-    public Student() {
+    private Student() {
     }
     //    Builder Constractor
-    public Student(Builder builder) {
+    private Student(Builder builder) {
         this.studentNumber = builder.studentNumber;
         this.studentName = builder.studentName;
         this.gender = builder.gender;
