@@ -9,9 +9,9 @@ public class Invoice {
     private LocalDate date;
     private InvoiceStatus invoiceStatus;
 
-    private Invoice() {}
+    public Invoice() {}
 
-    private Invoice(Builder builder) {
+    public Invoice(Builder builder) {
         this.invoiceId = builder.invoiceId;
         this.studentDetails = builder.studentDetails;
         this.totalAmount = builder.totalAmount;

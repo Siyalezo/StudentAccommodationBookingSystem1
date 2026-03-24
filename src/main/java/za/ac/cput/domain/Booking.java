@@ -8,10 +8,10 @@ public class Booking {
     private String endDate;
     private BookingStatus bookingStatus;
 
-    private Booking() {
+    public Booking() {
     }
 
-    private Booking(Booking.Builder builder) {
+    public Booking(Booking.Builder builder) {
         this.bookingId = builder.bookingId;
         this.bookingDate = builder.bookingDate;
         this.startDate = builder.startDate;

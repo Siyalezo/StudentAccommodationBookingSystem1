@@ -8,7 +8,10 @@ public class Accomodation {
     private String location;
     private AccomodationStatus accomodationStatus;
 
-    private Accomodation(Builder builder) {
+    public Accomodation() {
+    }
+
+    public Accomodation(Builder builder) {
         this.accomodationId = builder.accomodationId;
         this.name = builder.name;
         this.gender = builder.gender;

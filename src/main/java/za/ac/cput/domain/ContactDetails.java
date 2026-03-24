@@ -4,11 +4,11 @@ public class ContactDetails {
     private String studentEmail;
     private String phone;
 
-    private ContactDetails() {
+    public ContactDetails() {
     }
 
     //    Builder Constractor
-    private ContactDetails(Builder builder) {
+    public ContactDetails(Builder builder) {
         this.studentEmail = builder.studentEmail;
         this.phone = builder.phone;
     }

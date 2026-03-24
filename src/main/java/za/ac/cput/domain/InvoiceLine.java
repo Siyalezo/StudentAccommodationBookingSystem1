@@ -7,7 +7,7 @@ public class InvoiceLine {
     private double unitPrice;
     private double lineTotal;
 
-    private InvoiceLine() {}
+    public InvoiceLine() {}
 
     private InvoiceLine(Builder builder) {
         this.invoiceLineId = builder.invoiceLineId;
