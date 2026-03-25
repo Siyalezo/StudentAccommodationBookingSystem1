@@ -4,6 +4,8 @@ public class Student {
     private String studentNumber;
     private String studentName;
     private GenderType gender;
+    private Address address;
+    private ContactDetails contactDetails;
 
     public Student() {
     }
@@ -12,6 +14,8 @@ public class Student {
         this.studentNumber = builder.studentNumber;
         this.studentName = builder.studentName;
         this.gender = builder.gender;
+        this.address = builder.address;
+        this.contactDetails = builder.contactDetails;
     }
 
     public String getStudentNumber() {
@@ -21,9 +25,14 @@ public class Student {
     public String getStudentName() {
         return studentName;
     }
-
     public GenderType getGender() {
         return gender;
+    }
+    public Address getAddress() {
+        return address;
+    }
+    public ContactDetails getContactDetails() {
+        return contactDetails;
     }
 
     @Override
@@ -31,7 +40,9 @@ public class Student {
         return "Student{" +
                 "studentNumber='" + studentNumber + '\'' +
                 ", studentName='" + studentName + '\'' +
+                ", contactDetails=" + contactDetails +
                 ", gender=" + gender +
+                ", address=" + address +
                 '}';
     }
 
@@ -40,6 +51,8 @@ public class Student {
         private String studentNumber;
         private String studentName;
         private GenderType gender;
+        private Address address;
+        private ContactDetails contactDetails;
 
         public Builder setStudentNumber(String studentNumber) {
             this.studentNumber = studentNumber;
@@ -53,10 +66,20 @@ public class Student {
             this.gender = gender;
             return this;
         }
+        public Builder setAddress(Address address) {
+            this.address = address;
+            return this;
+        }
+        public Builder setContactDetails(ContactDetails contactDetails) {
+            this.contactDetails = contactDetails;
+            return this;
+        }
         public Builder copy(Student student){
             this.studentNumber = student.studentNumber;
             this.studentName = student.studentName;
             this.gender = student.gender;
+            this.address = student.address;
+            this.contactDetails = student.contactDetails;
             return this;
         }
         public Student build(){

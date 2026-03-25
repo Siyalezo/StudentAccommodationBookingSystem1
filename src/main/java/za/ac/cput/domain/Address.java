@@ -1,6 +1,6 @@
 package za.ac.cput.domain;
 
-public class Address {
+public class Address extends Student {
     private String city;
     private String street;
     private String postalCode;

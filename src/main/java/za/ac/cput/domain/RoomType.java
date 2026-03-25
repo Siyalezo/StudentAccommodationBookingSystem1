@@ -89,11 +89,11 @@ public class RoomType {
             this.height = roomType.height;
             this.capacity = roomType.capacity;
             this.price = roomType.price;
+            return this;
         }
 
         public RoomType build() {
-            return new Address(this);
+            return new RoomType(this);
         }
     }
     }
-}

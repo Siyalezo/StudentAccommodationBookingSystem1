@@ -89,11 +89,11 @@ public class Room {
             this.roomNumber = room.roomNumber;
             this.pricePerMonth = room.pricePerMonth;
             this.roomStatus = room.roomStatus;
+            return this;
         }
 
         public Room build() {
-            return new Address(this);
+            return new Room(this);
         }
     }
-}
 }

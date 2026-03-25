@@ -5,7 +5,7 @@ public class Accomodation {
     private String name;
     private GenderType gender;
     private String contactNumber;
-    private String location;
+    private Address address;
     private AccomodationStatus accomodationStatus;
 
     public Accomodation() {
@@ -16,7 +16,7 @@ public class Accomodation {
         this.name = builder.name;
         this.gender =builder.gender;
         this.contactNumber = builder.contactNumber;
-        this.location = builder.location;
+        this.address = builder.address;
         this.accomodationStatus = builder.accomodationStatus;
     }
 
@@ -38,9 +38,9 @@ public class Accomodation {
         return contactNumber;
     }
 
-    public String getLocation() {
+    public Address getAddress() {
 
-        return location;
+        return address;
     }
 
     public AccomodationStatus getAccomodationStatus() {
@@ -54,7 +54,7 @@ public class Accomodation {
                 ", name='" + name + '\'' +
                 ", gender='" + gender + '\'' +
                 ", contactNumber='" + contactNumber + '\'' +
-                ", location='" + location + '\'' +
+                ", location='" + address + '\'' +
                 ", accomodationStatus=" + accomodationStatus +
                 '}';
     }
@@ -66,7 +66,7 @@ public class Accomodation {
         private String name;
         private GenderType gender;
         private String contactNumber;
-        private String location;
+        private Address address;
         private AccomodationStatus accomodationStatus;
 
         public Builder setAccomodationId(String accomodationId) {
@@ -89,8 +89,8 @@ public class Accomodation {
             return this;
         }
 
-        public Builder setLocation(String location) {
-            this.location = location;
+        public Builder setAddress(Address address) {
+            this.address = address;
             return this;
         }
 
@@ -104,7 +104,7 @@ public class Accomodation {
             this.name = accomodation.name;
             this.gender = accomodation.gender;
             this.contactNumber = accomodation.contactNumber;
-            this.location = accomodation.location;
+            this.address = accomodation.address;
             this.accomodationStatus = accomodation.accomodationStatus;
             return this;
         }

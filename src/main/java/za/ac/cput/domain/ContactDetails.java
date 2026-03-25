@@ -37,7 +37,7 @@ public class ContactDetails {
             this.studentEmail = studentEmail;
             return this;
         }
-        public Builder ssetPhone(String phone) {
+        public Builder setPhone(String phone) {
             this.phone = phone;
             return this;
         }
