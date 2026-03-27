@@ -33,6 +33,7 @@ class BookingRepositoryTest {
                 .copy(readBooking)
                 .setBookingStatus(BookingStatus.CANCELLED)
                 .build();
+
         repository.update(updatedBooking);
         Booking checkUpdate = repository.read("B011");
         System.out.println("Updated: " + checkUpdate);
